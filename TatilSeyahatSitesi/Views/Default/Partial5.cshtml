@@ -1,0 +1,16 @@
+﻿@model List<TatilSeyahatSitesi.Models.Siniflar.blog>
+<div class="box1-left">
+    @foreach (var x in Model)
+    {
+        <div class="bot-img">
+            <img src="@x.blogImage" style="width:120px; height:65px;" alt="" />
+        </div>
+        <div class="bot-desc1">
+            <p>@x.baciklama.Substring(0, 75).. </p>
+            <a href="/Blog/BlogDetails/@x.blogID" class="btn btn-group">Bloga Git</a>
+        </div>
+        <div class="clear"></div>
+    }
+
+
+</div>

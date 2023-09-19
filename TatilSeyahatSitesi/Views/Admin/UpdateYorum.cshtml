@@ -1,0 +1,23 @@
+﻿@model TatilSeyahatSitesi.Models.Siniflar.yorum
+@{
+    ViewBag.Title = "UpdateYorum";
+    Layout = "~/Views/Shared/_adminLayout2.cshtml";
+}
+<br />
+<h2 class="card-header" style="text-align:center; background-color:burlywood; color:aliceblue">Yorumu Güncelleme Sayfası</h2>
+<br />
+<form method="post">
+    <br />
+    @Html.HiddenFor(x => x.yorumID)
+    <label class="form-control" style="background-color:beige"> Kullanıcı Adı</label><br />
+    @Html.TextBoxFor(x => x.kullaniciAdi, new { @class = "form-control" })
+    <br />
+    <label class="form-control" style="background-color:beige">Mail</label><br />
+    @Html.TextBoxFor(x => x.mail, new { @class = "form-control" })
+    <br />
+    <label class="form-control" style="background-color:beige"> Yorum</label><br />
+    @Html.TextAreaFor(x => x.icerik, 15, 1, new { @class = "form-control" })
+    <br />
+    <button class="btn-primary">Kaydet</button>
+</form>
+

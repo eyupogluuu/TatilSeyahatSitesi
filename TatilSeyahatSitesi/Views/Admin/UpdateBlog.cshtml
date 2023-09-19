@@ -1,0 +1,28 @@
+﻿@model TatilSeyahatSitesi.Models.Siniflar.blog
+@{
+    ViewBag.Title = "UpdateBlog";
+    Layout = "~/Views/Shared/_adminLayout2.cshtml";
+}
+
+<br />
+<h2 class="card-header" style="text-align:center; background-color:burlywood; color:aliceblue">Blog Listesi</h2>
+<br />
+<form method="post" class="form-group">
+    <label>ID:</label>
+    @Html.TextBoxFor(x => x.blogID, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    <label>Başlık:</label>
+    @Html.TextBoxFor(x => x.baslik, new { @class = "form-control" })
+    <br />
+    <label>Tarih:</label>
+    @Html.TextBoxFor(x => x.tarih, new { @class = "form-control" })
+    <br />
+    <label>Açıklama:</label>
+    @Html.TextAreaFor(x => x.baciklama, 15, 1, new { @class = "form-control" })
+    <br />
+    <label>Resim Yolu:</label>
+    @Html.TextBoxFor(x => x.blogImage, new { @class = "form-control" })
+    <br />
+    <button class="btn-primary">Kaydet</button>
+</form>
+

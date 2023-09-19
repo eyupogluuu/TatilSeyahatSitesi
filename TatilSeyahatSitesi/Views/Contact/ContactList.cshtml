@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "ContactList";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Free Contact Form :: W3layouts</title>
+    <link rel="stylesheet" href="~/tidy-contact-form/assets/css/style.css">
+    <link rel="stylesheet" href="~/tidy-contact-form/assets/css/font-awesome.css">
+</head>
+
+<body>
+    <!-- contacts -->
+    <section class="w3l-contact-7">
+        <div class="contacts-9 section-gap">
+            <div class="wrapper">
+                <div class="top-map">
+                    <div class="map">
+                        <iframe src="@ViewBag.haritakonum"
+                                frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                    </div>
+
+
+                    <div class="map-content-9">
+                        <div class="cont-details">
+                            <h5>İletisim Bilgileri</h5>
+
+                            <address>
+                                
+                                
+                                    <p><span class="fa fa-map-marker"></span>@ViewBag.adres</p>
+                                    <p><span class="fa fa-phone"></span><a href="#">@ViewBag.telefon</a></p>
+                               
+
+                            </address>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- //contacts -->
+</body>
+
+</html>

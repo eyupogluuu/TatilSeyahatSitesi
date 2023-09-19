@@ -1,0 +1,23 @@
+﻿@model List<TatilSeyahatSitesi.Models.Siniflar.hakkimizda>
+@{
+    ViewBag.Title = "AboutList";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<div class="content">
+    <div class="wrap">
+        <div class="about">
+            <h3>Hakkımızda</h3>
+            @foreach (var h in Model)
+            {
+                <img src="@h.hgorselUrl" alt="" />
+                <div style="background-color:beige; border:15px;">
+                    <p>@h.haciklama</p>
+                </div>
+                
+            }
+
+        </div>
+    </div>
+</div>
+

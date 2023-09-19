@@ -1,0 +1,35 @@
+﻿@model List<TatilSeyahatSitesi.Models.Siniflar.yorum>
+@{
+    ViewBag.Title = "YorumList";
+    Layout = "~/Views/Shared/_adminLayout2.cshtml";
+}
+
+<br />
+<h2 class="card-header" style="text-align:center; background-color:burlywood; color:aliceblue">Yorum Listesi</h2>
+<br />
+<table class="table table-bordered" style="text-align:center">
+    <tr>
+        <th>ID</th>
+        <th>Kullanıcı Adı</th>
+        <th>Blog</th>
+        <th>Yorumu</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var y in Model)
+    {
+        <tr>
+            <td>@y.yorumID</td>
+            <td>@y.kullaniciAdi</td>
+            <td>@y.blog.baslik</td>
+            <td>@y.icerik</td>
+            <td><a href="/Admin/DeleteYorum/@y.yorumID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Admin/UpdateYorum/@y.yorumID" class="btn btn-outline-success">Güncelle</a></td>
+            @*<td><a href="/Blog/BlogDetails/@b.blogID" class="btn btn-outline-warning">Detaylar</a></td>*@
+        </tr>
+    }
+
+</table>
+<br />
+
+

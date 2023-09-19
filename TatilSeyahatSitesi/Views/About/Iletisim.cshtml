@@ -1,0 +1,35 @@
+﻿@model List<TatilSeyahatSitesi.Models.Siniflar.iletisim>
+@{
+    ViewBag.Title = "Iletisim";
+    Layout = "~/Views/Shared/_adminLayout2.cshtml";
+}
+
+<br />
+<h2 class="card-header" style="text-align:center; background-color:burlywood; color:aliceblue">Gelen Mesajlar</h2>
+<br />
+<table class="table table-bordered" style="text-align:center; background-color:beige;">
+    <tr>
+        <th>ID</th>
+        <th>Ad Soyad</th>
+        <th>Mail</th>
+        <th>Konu</th>
+        <th>Mesaj</th>
+        <th>Sil</th>
+
+
+    </tr>
+    @foreach (var i in Model)
+    {
+<tr>
+    <td>@i.iletisimID</td>
+    <td>@i.adSoyad</td>
+    <td>@i.mail</td>
+    <td>@i.konu</td>
+    <td>@i.mesaj</td>
+    <td><a href="/About/IletisimSil/@i.iletisimID" class="btn btn-outline-danger">Sil</a></td>
+
+</tr>
+    }
+
+</table>
+

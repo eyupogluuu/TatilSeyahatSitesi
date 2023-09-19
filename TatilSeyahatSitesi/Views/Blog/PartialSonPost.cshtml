@@ -1,0 +1,14 @@
+﻿@model List<TatilSeyahatSitesi.Models.Siniflar.blog>
+<div class="col-md-4 side-content">
+    <div class="recent">
+        <h3>Son Postlar</h3>
+
+        <ul>
+            @foreach (var p in Model)
+            {
+                <li><a href="/Blog/BlogDetails/@p.blogID">@p.baslik</a></li>
+            }
+
+
+        </ul>
+    </div>
