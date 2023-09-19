@@ -17,7 +17,16 @@ SQL Server <br>
 
 **Ekran Resimleri:**<br>
 
-![](https://github.com/eyupogluuu/MyEgitimAkademi_Portfolio/blob/master/1.PNG)<br>
+
+![](https://github.com/eyupogluuu/TatilSeyahatSitesi/blob/master/giriş.PNG)<br> <br>
+![](https://github.com/eyupogluuu/TatilSeyahatSitesi/blob/master/kayıtol.PNG)<br> <br>
+![](https://github.com/eyupogluuu/TatilSeyahatSitesi/blob/master/anasayfa.PNG)<br> <br>
+![](https://github.com/eyupogluuu/TatilSeyahatSitesi/blob/master/anasayfa2.PNG)<br> <br>
+![](https://github.com/eyupogluuu/TatilSeyahatSitesi/blob/master/iletisim.PNG)<br> <br>
+![](https://github.com/eyupogluuu/TatilSeyahatSitesi/blob/master/adminpanel.PNG)<br> <br>
+![](https://github.com/eyupogluuu/TatilSeyahatSitesi/blob/master/yorumekle.PNG)<br> <br>
+![](https://github.com/eyupogluuu/TatilSeyahatSitesi/blob/master/yorumguncelle.PNG)<br> <br>
+![](https://github.com/eyupogluuu/TatilSeyahatSitesi/blob/master/yorumliste.PNG)<br> <br>
 
 
 **Amaç**
